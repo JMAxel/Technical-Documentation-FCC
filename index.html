@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<nav id="navbar">
+			<header>PY Documentation</header>
+			<ul>
+				<li>
+					<a class="nav-link" href="#Introduction">Introduction</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#Python">Python</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#Hello_World">Hello World</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#Variables">Variables</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#Declaring_Variables">Declaring Variables</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#Variable_Scope">Variable Scope</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#Constants">Constants</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#Data_types">Data types</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#If...else_statement">If...else statement</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#while_statement">While statement</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#function_declaration">Function declaration</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#Reference">Reference</a>
+				</li>
+			</ul>
+		</nav>
+		<main id="main-doc">
+			<section class="main-section" id="Introduction">
+				<header>Introduction</header>
+				<article>
+					<p>Welcome to the official documentation for Python, one of the most versatile and widely-used programming languages in the world. Whether you're a seasoned developer or just starting your journey into the realm of programming, Python offers a powerful and intuitive platform for turning your ideas into reality</p>
+				</article>
+			</section>
+			<section class="main-section" id="Python">
+				<header>Python</header>
+				<article>
+					<p>Python is a high-level, interpreted programming language known for its simplicity and readability. Developed in the late 1980s by Guido van Rossum, Python emphasizes code readability with its clear and expressive syntax, making it an ideal choice for beginners and experts alike.</p>
+					<p>One of Python's defining characteristics is its clean and intuitive syntax, designed to emphasize code readability and reduce the cost of program maintenance. Python's syntax resembles pseudo-code, making it easy to express concepts in a clear and concise manner. This simplicity makes Python an ideal language for beginners, as well as seasoned developers seeking to write elegant and maintainable code.</p>
+					<p>Python's versatility is another key factor contributing to its widespread adoption. Unlike some languages that excel in specific domains, Python can be used for a wide range of applications, from web development and scientific computing to artificial intelligence and automation. Whether you're building a web application using frameworks like Django or Flask, analyzing data with libraries like NumPy and pandas, or creating machine learning models with TensorFlow or PyTorch, Python provides the tools you need to bring your ideas to life.</p>
+					<p>Python is an interpreted language, meaning that code written in Python is executed line by line by an interpreter, rather than being compiled into machine code before execution. This interpretive nature makes Python highly interactive, allowing developers to test and debug code in real-time using interactive shells like the Python REPL (Read-Eval-Print Loop) or integrated development environments (IDEs) like PyCharm and VS Code.</p>
+					<p>Python is an open-source language, meaning that its source code is freely available for anyone to view, modify, and distribute. This openness has led to a vibrant and active community of developers who contribute to the ongoing development and improvement of Python. The Python Package Index (PyPI) hosts thousands of third-party packages and libraries, providing solutions for a wide range of tasks and fostering collaboration among developers worldwide.</p>
+					<p>In the following sections of this documentation, we will explore Python in greater detail, covering topics such as basic syntax, data types, control structures, functions, modules, and more. Whether you're new to Python or looking to expand your knowledge, this documentation will serve as your comprehensive guide to mastering one of the most versatile and beloved programming languages in existence.</p>
+				</article>
+			</section>
+			<section class="main-section" id="Hello_World">
+				<header>Hello World</header>
+				<article>
+					<p>First, open a text editor of your choice. You can use any text editor you're comfortable with, such as Notepad, Sublime Text, Atom, or Visual Studio Code.</p>
+					<p>In the text editor, type the following line of Python code:</p>
+					<code>print("Hello, World!")</code>
+					<p>Save the file with a .py extension, such as hello_world.py. This extension indicates that the file contains Python code.</p>
+					<p>Open a terminal or command prompt, navigate to the directory where you saved your Python file, and then type the following command:</p>
+					<code>python hello_world.py</code>
+					<p>This command tells the Python interpreter to execute the code in the hello_world.py file. As a result, you should see the output:</p>
+					<code>Hello, World!</code>
+				</article>
+			</section>
+			<section class="main-section" id="Variables">
+				<header>Variables</header>
+				<article>
+					<p>Variables are fundamental building blocks in any programming language, including Python. They serve as placeholders for storing data that can be manipulated and referenced within a program.</p>
+				</article>
+			</section>
+			<section class="main-section" id="Declaring_Variables">
+				<header>Declaring Variables</header>
+				<article>
+					<p>In Python, declaring a variable is straightforward. You simply choose a name for the variable and assign a value to it using the assignment operator (=). Unlike some other programming languages, Python is dynamically typed, meaning you don't need to specify the data type of a variable explicitly. Python infers the data type based on the value assigned to the variable.</p>
+					<code># Example: Declaring variables in Python
+						age = 25          # Integer variable
+						name = "Alice"    # String variable
+						is_student = True # Boolean variable
+						pi_value = 3.14   # Float variable</code>
+					<p>When naming variables in Python, there are a few rules to keep in mind:</p>
+					<ul>
+						<li>
+							Variable names can contain letters, digits, and underscores.
+						</li>
+						<li>
+							Variable names must begin with a letter (a-z, A-Z) or an underscore (_), but cannot begin with a digit.
+						</li>
+						<li>
+							Variable names are case-sensitive (age, Age, and AGE would be treated as different variables).
+						</li>
+						<li>
+							Python keywords (reserved words) cannot be used as variable names.
+						</li>
+					</ul>
+				</article>
+			</section>
+			<section class="main-section" id="Variable_Scope">
+				<header>Variable Scope</header>
+				<article>
+					<p>In Python, the scope of a variable determines where in the code it can be accessed. Variables can have either global or local scope:</p>
+					<ul>
+						<li>
+							Global Variables: Variables declared outside of any function have global scope, meaning they can be accessed from anywhere in the program.
+						</li>
+						<li>
+							Local Variables: Variables declared within a function have local scope, meaning they are only accessible within the function where they are defined.
+						</li>
+					</ul>
+				</article>
+			</section>
+			<section class="main-section" id="Constants">
+				<header>Constants</header>
+				<article>
+					<p>While Python doesn't have built-in support for constants, programmers often use naming conventions to denote variables that should not be changed throughout the program. By convention, constants are typically represented using uppercase variable names.</p>
+					<p>To indicate that a variable is intended to be treated as a constant, follow these naming conventions:</p>
+					<ul>
+						<li>
+							Use uppercase letters for the entire name of the variable.
+						</li>
+						<li>
+							Use underscores (`_`) to separate words in the variable name, if needed.
+						</li>
+					</ul>
+					<code># Example: Constants in Python
+						PI = 3.14159
+						GRAVITY_ACCELERATION = 9.8
+						MAX_ATTEMPTS = 5</code>
+				</article>
+			</section>
+			<section class="main-section" id="Data_types">
+				<header>Data Types</header>
+				<article>
+					<p>In Python, every value has a data type, which defines the kind of value it represents and the operations that can be performed on it. Python supports a variety of built-in data types, including numeric, sequence, mapping, and set types.</p>
+					<ul>
+						<li>
+							Integers: Whole numbers without any decimal point, such as -5, 0, or 100.
+						</li>
+						<li>
+							Floating-Point Numbers: Numbers with a decimal point or an exponent notation, such as 3.14 or 2.5e2.                       
+						</li>
+						<li>
+							Complex Numbers: Numbers with a real and imaginary part, such as 3 + 4j or 1 - 2j.
+						</li>
+						<li>
+							Lists: Ordered collections of items, mutable and denoted by square brackets ([]).
+						</li>
+						<li>
+							Tuples: Ordered collections of items, immutable and denoted by parentheses (()).
+						</li>
+						<li>
+							Strings: Sequences of characters, immutable and denoted by single or double quotes ('' or "").
+						</li>
+						<li>
+							Dictionaries: Unordered collections of key-value pairs, mutable and denoted by curly braces ({}).
+						</li>
+						<li>
+							Sets: Unordered collections of unique elements, mutable and denoted by curly braces ({}).
+						</li>
+						<li>
+							Frozen Sets: Immutable versions of sets, denoted by frozenset().
+						</li>
+					</ul>
+				</article>
+			</section>
+			<section class="main-section" id="If...else_statement">
+				<header>If...else statement</header>
+				<article>
+					<p>The if...else statement in Python allows you to execute different blocks of code based on whether a given condition is true or false. It provides a way to add decision-making capabilities to your programs.</p>
+					<code>if condition:
+						# Block of code to execute if the condition is true
+					else:
+						# Block of code to execute if the condition is false</code>
+					<p>Here's a simple example to illustrate the usage of if...else statements in Python:</p>
+					<code># Example: If...Else statement
+						x = 10
+						
+						if x > 5:
+							print("x is greater than 5")
+						else:
+							print("x is not greater than 5")</code>
+				</article>
+			</section>
+			<section class="main-section" id="while_statement">
+				<header>While statement</header>
+				<article>
+					<p>The while statement in Python allows you to repeatedly execute a block of code as long as a specified condition is true. It provides a way to create loops in your programs for iterative execution.</p>
+					<code>while condition:
+						# Block of code to execute while the condition is true</code>
+					<p>Here's a simple example to illustrate the usage of the while statement in Python:</p>
+					<code># Example: While statement
+						x = 0
+						
+						while x < 5:
+							print("x is", x)
+							x += 1</code>
+				</article>
+			</section>
+			<section class="main-section" id="function_declaration">
+				<header>Function Declaration</header>
+				<p>A function in Python is a reusable block of code that performs a specific task. Function declaration involves defining the function's name, parameters, and block of code to be executed when the function is called.</p>
+				<code>def function_name(parameters):
+					# Block of code to execute when the function is called
+					# Optionally, return a value using the return statement</code>
+				<p>Here's a simple example of a function declaration in Python:</p>
+				<code># Example: Function declaration
+					def greet(name):
+						"""Function to greet the user."""
+						print("Hello, " + name + "!")</code>
+			</section>
+			<section class="main-section" id="Reference">
+				<header>Reference</header>
+				<article>
+					<ul>
+						<li>All the documentation in this pagen is taken from <a href="https://chatgpt.com" target="_blank">ChatGPT</a></li>
+					</ul>
+				</article>
+			</section>
+		</main>
+	</body>
+</html>
